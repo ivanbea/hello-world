@@ -1,0 +1,7 @@
+1 create new repository on github
+2 clone it from my pc git clone https:gdfgdgshshs
+3 work on my pc within the directory of the repo
+4 git add file
+5 git commit file
+6 git push origin master
+
