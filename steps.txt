@@ -21,4 +21,7 @@ git mv file.rb subdirectory/
 git commit -m "let's move things around"
 
 ignore files
-vi .gitignore *.extension
+vi .gitignore *.extensio
+
+ammend
+git commit --amend
