@@ -8,3 +8,17 @@
 in any case:
 git status
 git log
+
+in a single steps for files already tracked (added)
+git commit -a -m "text for the commit"
+
+remove files
+git rm somefile.txt
+git commit -m "we do'nt want this files"
+
+move files
+git mv file.rb subdirectory/
+git commit -m "let's move things around"
+
+ignore files
+vi .gitignore *.extension
