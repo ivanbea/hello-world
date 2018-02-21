@@ -5,3 +5,6 @@
 5 git commit file
 6 git push origin master
 
+in any case:
+git status
+git log
