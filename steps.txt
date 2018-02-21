@@ -25,3 +25,19 @@ vi .gitignore *.extensio
 
 ammend
 git commit --amend
+
+unstage a file (previously added but we don't want in the commit)
+git reset HEAD file_to_remove
+
+Return the modified file to the previous published state
+git checkout -- new_script.rb
+
+Rollbacks
+git revert HEAD
+
+git log -p -2 (-p diff information, -2 only las 2 commits)
+
+target specific commit with the commit ID (seen in git log) it is a hash with SHA1 uses for consistency, not security. With a hash the collisions are really really rare.
+
+git revert HASHID (normally only the first 4 characters
+
