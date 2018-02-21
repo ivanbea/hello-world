@@ -41,3 +41,64 @@ target specific commit with the commit ID (seen in git log) it is a hash with SH
 
 git revert HASHID (normally only the first 4 characters
 
+____________ADVANCED LESSONS________________
+
+branch 
+default branch - master
+other branches - to experiment without messing master
+and when all is correct we can merge the changes with master
+HEAD point to the commit where your current working directory is based on
+
+git branch (lists all)
+git branch -d name-branch-to-delete (or -D)
+git branch new_branch
+
+enought for me
+_______________________________________________
+
+remote repository
+
+local git server for privacy
+
+git remote add origin https://github.------ (instead of a clone we create a lnk)
+
+HTTP readonly
+HTTPS SSH authentificate
+
+git remote
+git remote rename
+get remote remove origin
+git remote -v (list url)
+
+git remote add shortname url
+
+git fetch shortname (pull data from a remote)
+git fetch shortname branch (pull only a specific branch)
+git branch -r (shows remote branches, they are read only)
+
+MERGE
+git fetch origin master (get all the code from the remote repository)
+git status (can tell us if our branch is behind the origin/master)
+git log --decorate origin/master
+if we whant all this changes in our master branch
+git merge origin/master
+
+PULL
+fetch and merge at the same time, get the copy and merge it in the local branch
+
+git pull origin
+
+git pull origin master
+
+PUSH
+send data upstream to a remote repository
+
+git push origin master (enter login)
+git push --all origin
+
+push can fail if the remote have work that it is not stored locally, newest one, first pull
+git pull origin master
+if it is a conflict it tells us and we can modify the file, then git commit -a -m "Merging the file"
+git push origin master
+
+
